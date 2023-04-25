@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>说下 vue 和 react 的区别 | Tianyの笔记分享</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/MyBlog/assets/logo.png">
+    <meta name="description" content="Tiany">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/MyBlog/assets/css/0.styles.bee4a45e.css" as="style"><link rel="preload" href="/MyBlog/assets/js/app.134e4bf8.js" as="script"><link rel="preload" href="/MyBlog/assets/js/2.db46a12f.js" as="script"><link rel="preload" href="/MyBlog/assets/js/55.6e32dbc2.js" as="script"><link rel="prefetch" href="/MyBlog/assets/js/10.515c297a.js"><link rel="prefetch" href="/MyBlog/assets/js/11.003cdd37.js"><link rel="prefetch" href="/MyBlog/assets/js/12.ed49e963.js"><link rel="prefetch" href="/MyBlog/assets/js/13.fae67ff1.js"><link rel="prefetch" href="/MyBlog/assets/js/14.160b5417.js"><link rel="prefetch" href="/MyBlog/assets/js/15.bbdcd236.js"><link rel="prefetch" href="/MyBlog/assets/js/16.ba8f5000.js"><link rel="prefetch" href="/MyBlog/assets/js/17.edcca8b4.js"><link rel="prefetch" href="/MyBlog/assets/js/18.dfd5e1da.js"><link rel="prefetch" href="/MyBlog/assets/js/19.b796e64c.js"><link rel="prefetch" href="/MyBlog/assets/js/20.87296ad3.js"><link rel="prefetch" href="/MyBlog/assets/js/21.4a23ca54.js"><link rel="prefetch" href="/MyBlog/assets/js/22.5c127db3.js"><link rel="prefetch" href="/MyBlog/assets/js/23.f7e538a0.js"><link rel="prefetch" href="/MyBlog/assets/js/24.911416a8.js"><link rel="prefetch" href="/MyBlog/assets/js/25.a8038e86.js"><link rel="prefetch" href="/MyBlog/assets/js/26.bb307db8.js"><link rel="prefetch" href="/MyBlog/assets/js/27.79dc0622.js"><link rel="prefetch" href="/MyBlog/assets/js/28.0ed41f6f.js"><link rel="prefetch" href="/MyBlog/assets/js/29.eed847b3.js"><link rel="prefetch" href="/MyBlog/assets/js/3.8b4e5169.js"><link rel="prefetch" href="/MyBlog/assets/js/30.34eafc3b.js"><link rel="prefetch" href="/MyBlog/assets/js/31.3c091deb.js"><link rel="prefetch" href="/MyBlog/assets/js/32.9d8b349d.js"><link rel="prefetch" href="/MyBlog/assets/js/33.83bbbffd.js"><link rel="prefetch" href="/MyBlog/assets/js/34.82ae683e.js"><link rel="prefetch" href="/MyBlog/assets/js/35.ac1d79f2.js"><link rel="prefetch" href="/MyBlog/assets/js/36.899f50d8.js"><link rel="prefetch" href="/MyBlog/assets/js/37.a1bb9319.js"><link rel="prefetch" href="/MyBlog/assets/js/38.9416ac40.js"><link rel="prefetch" href="/MyBlog/assets/js/39.c83e9c95.js"><link rel="prefetch" href="/MyBlog/assets/js/4.76b9389c.js"><link rel="prefetch" href="/MyBlog/assets/js/40.b09cc65c.js"><link rel="prefetch" href="/MyBlog/assets/js/41.33e24406.js"><link rel="prefetch" href="/MyBlog/assets/js/42.a6733d9e.js"><link rel="prefetch" href="/MyBlog/assets/js/43.c8799862.js"><link rel="prefetch" href="/MyBlog/assets/js/44.770fbda2.js"><link rel="prefetch" href="/MyBlog/assets/js/45.ce98cfcb.js"><link rel="prefetch" href="/MyBlog/assets/js/46.1c855664.js"><link rel="prefetch" href="/MyBlog/assets/js/47.84048bed.js"><link rel="prefetch" href="/MyBlog/assets/js/48.d92b80ea.js"><link rel="prefetch" href="/MyBlog/assets/js/49.e4e70199.js"><link rel="prefetch" href="/MyBlog/assets/js/5.5d918675.js"><link rel="prefetch" href="/MyBlog/assets/js/50.ea28fc2b.js"><link rel="prefetch" href="/MyBlog/assets/js/51.d434fcb7.js"><link rel="prefetch" href="/MyBlog/assets/js/52.1bbc14d1.js"><link rel="prefetch" href="/MyBlog/assets/js/53.3d16fd40.js"><link rel="prefetch" href="/MyBlog/assets/js/54.cdfdb56b.js"><link rel="prefetch" href="/MyBlog/assets/js/56.09ee3340.js"><link rel="prefetch" href="/MyBlog/assets/js/57.d5289bf7.js"><link rel="prefetch" href="/MyBlog/assets/js/58.4a23d855.js"><link rel="prefetch" href="/MyBlog/assets/js/6.3496d537.js"><link rel="prefetch" href="/MyBlog/assets/js/7.f9768793.js"><link rel="prefetch" href="/MyBlog/assets/js/8.d2d80cc9.js"><link rel="prefetch" href="/MyBlog/assets/js/9.b7ce2920.js">
+    <link rel="stylesheet" href="/MyBlog/assets/css/0.styles.bee4a45e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/MyBlog/" class="home-link router-link-active"><!----> <span class="site-name">Tianyの笔记分享</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/MyBlog/js/" class="nav-link">
+  Js
+</a></div><div class="nav-item"><a href="/MyBlog/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/MyBlog/react/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/MyBlog/hc/" class="nav-link">
+  Html &amp; Css
+</a></div><div class="nav-item"><a href="/MyBlog/webpack/" class="nav-link">
+  Webpack
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试" class="dropdown-title"><span class="title">面试</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试" class="mobile-dropdown-title"><span class="title">面试</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/MyBlog/面试题/html/" class="nav-link">
+  Html
+</a></li><li class="dropdown-item"><!----> <a href="/MyBlog/面试题/Css/" class="nav-link">
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/MyBlog/面试题/js/" class="nav-link">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/MyBlog/面试题/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/MyBlog/面试题/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/MyBlog/面试题/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/MyBlog/面试题/小程序/" class="nav-link">
+  小程序
+</a></li><li class="dropdown-item"><!----> <a href="/MyBlog/面试题/优化/" class="nav-link">
+  前端优化
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术分享" class="dropdown-title"><span class="title">技术分享</span> <span class="arrow down"></span></button> <button type="button" aria-label="技术分享" class="mobile-dropdown-title"><span class="title">技术分享</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          React
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/MyBlog/问题/React/父组件调用子组件方法.html" class="nav-link">
+  父组件调用子组件方法
+</a></li><li class="dropdown-subitem"><a href="/MyBlog/问题/React/forwardRef+connect.html" class="nav-link">
+  forwardRef+Redux+connect配合使用
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Vue
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/MyBlog/问题/Vue/" class="nav-link">
+  
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Repo" class="dropdown-title"><span class="title">Repo</span> <span class="arrow down"></span></button> <button type="button" aria-label="Repo" class="mobile-dropdown-title"><span class="title">Repo</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/Tiany-L" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/tiany-l" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/MyBlog/js/" class="nav-link">
+  Js
+</a></div><div class="nav-item"><a href="/MyBlog/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/MyBlog/react/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/MyBlog/hc/" class="nav-link">
+  Html &amp; Css
+</a></div><div class="nav-item"><a href="/MyBlog/webpack/" class="nav-link">
+  Webpack
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试" class="dropdown-title"><span class="title">面试</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试" class="mobile-dropdown-title"><span class="title">面试</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/MyBlog/面试题/html/" class="nav-link">
+  Html
+</a></li><li class="dropdown-item"><!----> <a href="/MyBlog/面试题/Css/" class="nav-link">
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/MyBlog/面试题/js/" class="nav-link">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/MyBlog/面试题/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/MyBlog/面试题/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/MyBlog/面试题/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/MyBlog/面试题/小程序/" class="nav-link">
+  小程序
+</a></li><li class="dropdown-item"><!----> <a href="/MyBlog/面试题/优化/" class="nav-link">
+  前端优化
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术分享" class="dropdown-title"><span class="title">技术分享</span> <span class="arrow down"></span></button> <button type="button" aria-label="技术分享" class="mobile-dropdown-title"><span class="title">技术分享</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          React
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/MyBlog/问题/React/父组件调用子组件方法.html" class="nav-link">
+  父组件调用子组件方法
+</a></li><li class="dropdown-subitem"><a href="/MyBlog/问题/React/forwardRef+connect.html" class="nav-link">
+  forwardRef+Redux+connect配合使用
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Vue
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/MyBlog/问题/Vue/" class="nav-link">
+  
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Repo" class="dropdown-title"><span class="title">Repo</span> <span class="arrow down"></span></button> <button type="button" aria-label="Repo" class="mobile-dropdown-title"><span class="title">Repo</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/Tiany-L" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/tiany-l" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Vue</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/MyBlog/%E9%9D%A2%E8%AF%95%E9%A2%98/vue/" aria-current="page" class="sidebar-link">简单说下对vue的理解</a></li><li><a href="/MyBlog/面试题/vue/vue和react的区别.html" class="active sidebar-link">说下 vue 和 react 的区别</a></li><li><a href="/MyBlog/面试题/vue/computed和watch的区别.html" class="sidebar-link">computed 和 watch 的区别</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="说下-vue-和-react-的区别"><a href="#说下-vue-和-react-的区别" class="header-anchor">#</a> 说下 vue 和 react 的区别</h1> <p><strong>vue 提供自定义指令</strong></p> <p>减少在虚拟 dom 中的逻辑处理。</p> <p><strong>react 采用 jsx 语法</strong></p> <p>jsx 就是 xml 结合 js 的编译更快，安全性更高，创建模板（组件）方便快捷。</p> <p><strong>路由</strong>：</p> <p>vue 路由：提供了路由实例，可以对路由进行管理，也提供了当前路由对象的信息，提供了导航守卫。</p> <p>react 路由：提供了相关的组件以及当前路由对象的信息。</p> <p>react 需要 hoc 进行封装导航守卫，（可以封装全局导航守卫，组件内导航守卫）。</p> <p><strong>vue 计算属性</strong></p> <p>Vue 提供了完整的计算属性 api ,其内部依赖改变计算属性重新计算并缓存。</p> <p>react 本身没有计算属性，（但是在 class 类组件中可以使用 get/set 进行设置，或者函数式组件使用 object.defineProperty 的 get/set 进行设置） 。</p> <p><strong>vue 提供了 watch 属性</strong></p> <p>watch 属性可以 vue 状态依赖进行监听。</p> <p>react 本身没有监听属性。</p> <p><strong>Vue 提供了 model 可以对自定义组件进行绑定</strong></p> <p>Vue 局部组件在使用需要在引入的组件中 components 进行挂载。</p> <p>react 局部组件在引入组件中直接使用。</p> <p><strong>生命周期</strong></p> <p>在生命周期方面，vue 和 react 都提供了生命周期钩子，但 vue 的生命周期划分明确，从创建到销毁都是分工明确的，</p> <p>而 react 的生命周期是阶段性的，同一种生命周期可以存在不同的阶段</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新:</span> <span class="time">11/8/2022, 3:28:50 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/MyBlog/%E9%9D%A2%E8%AF%95%E9%A2%98/vue/" class="prev router-link-active">
+        简单说下对vue的理解
+      </a></span> <span class="next"><a href="/MyBlog/面试题/vue/computed和watch的区别.html">
+        computed 和 watch 的区别
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/MyBlog/assets/js/app.134e4bf8.js" defer></script><script src="/MyBlog/assets/js/2.db46a12f.js" defer></script><script src="/MyBlog/assets/js/55.6e32dbc2.js" defer></script>
+  </body>
+</html>

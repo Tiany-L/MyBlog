@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>变量 | Tianyの笔记分享</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/MyBlog/assets/logo.png">
+    <meta name="description" content="Tiany">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/MyBlog/assets/css/0.styles.bee4a45e.css" as="style"><link rel="preload" href="/MyBlog/assets/js/app.134e4bf8.js" as="script"><link rel="preload" href="/MyBlog/assets/js/2.db46a12f.js" as="script"><link rel="preload" href="/MyBlog/assets/js/14.160b5417.js" as="script"><link rel="prefetch" href="/MyBlog/assets/js/10.515c297a.js"><link rel="prefetch" href="/MyBlog/assets/js/11.003cdd37.js"><link rel="prefetch" href="/MyBlog/assets/js/12.ed49e963.js"><link rel="prefetch" href="/MyBlog/assets/js/13.fae67ff1.js"><link rel="prefetch" href="/MyBlog/assets/js/15.bbdcd236.js"><link rel="prefetch" href="/MyBlog/assets/js/16.ba8f5000.js"><link rel="prefetch" href="/MyBlog/assets/js/17.edcca8b4.js"><link rel="prefetch" href="/MyBlog/assets/js/18.dfd5e1da.js"><link rel="prefetch" href="/MyBlog/assets/js/19.b796e64c.js"><link rel="prefetch" href="/MyBlog/assets/js/20.87296ad3.js"><link rel="prefetch" href="/MyBlog/assets/js/21.4a23ca54.js"><link rel="prefetch" href="/MyBlog/assets/js/22.5c127db3.js"><link rel="prefetch" href="/MyBlog/assets/js/23.f7e538a0.js"><link rel="prefetch" href="/MyBlog/assets/js/24.911416a8.js"><link rel="prefetch" href="/MyBlog/assets/js/25.a8038e86.js"><link rel="prefetch" href="/MyBlog/assets/js/26.bb307db8.js"><link rel="prefetch" href="/MyBlog/assets/js/27.79dc0622.js"><link rel="prefetch" href="/MyBlog/assets/js/28.0ed41f6f.js"><link rel="prefetch" href="/MyBlog/assets/js/29.eed847b3.js"><link rel="prefetch" href="/MyBlog/assets/js/3.8b4e5169.js"><link rel="prefetch" href="/MyBlog/assets/js/30.34eafc3b.js"><link rel="prefetch" href="/MyBlog/assets/js/31.3c091deb.js"><link rel="prefetch" href="/MyBlog/assets/js/32.9d8b349d.js"><link rel="prefetch" href="/MyBlog/assets/js/33.83bbbffd.js"><link rel="prefetch" href="/MyBlog/assets/js/34.82ae683e.js"><link rel="prefetch" href="/MyBlog/assets/js/35.ac1d79f2.js"><link rel="prefetch" href="/MyBlog/assets/js/36.899f50d8.js"><link rel="prefetch" href="/MyBlog/assets/js/37.a1bb9319.js"><link rel="prefetch" href="/MyBlog/assets/js/38.9416ac40.js"><link rel="prefetch" href="/MyBlog/assets/js/39.c83e9c95.js"><link rel="prefetch" href="/MyBlog/assets/js/4.76b9389c.js"><link rel="prefetch" href="/MyBlog/assets/js/40.b09cc65c.js"><link rel="prefetch" href="/MyBlog/assets/js/41.33e24406.js"><link rel="prefetch" href="/MyBlog/assets/js/42.a6733d9e.js"><link rel="prefetch" href="/MyBlog/assets/js/43.c8799862.js"><link rel="prefetch" href="/MyBlog/assets/js/44.770fbda2.js"><link rel="prefetch" href="/MyBlog/assets/js/45.ce98cfcb.js"><link rel="prefetch" href="/MyBlog/assets/js/46.1c855664.js"><link rel="prefetch" href="/MyBlog/assets/js/47.84048bed.js"><link rel="prefetch" href="/MyBlog/assets/js/48.d92b80ea.js"><link rel="prefetch" href="/MyBlog/assets/js/49.e4e70199.js"><link rel="prefetch" href="/MyBlog/assets/js/5.5d918675.js"><link rel="prefetch" href="/MyBlog/assets/js/50.ea28fc2b.js"><link rel="prefetch" href="/MyBlog/assets/js/51.d434fcb7.js"><link rel="prefetch" href="/MyBlog/assets/js/52.1bbc14d1.js"><link rel="prefetch" href="/MyBlog/assets/js/53.3d16fd40.js"><link rel="prefetch" href="/MyBlog/assets/js/54.cdfdb56b.js"><link rel="prefetch" href="/MyBlog/assets/js/55.6e32dbc2.js"><link rel="prefetch" href="/MyBlog/assets/js/56.09ee3340.js"><link rel="prefetch" href="/MyBlog/assets/js/57.d5289bf7.js"><link rel="prefetch" href="/MyBlog/assets/js/58.4a23d855.js"><link rel="prefetch" href="/MyBlog/assets/js/6.3496d537.js"><link rel="prefetch" href="/MyBlog/assets/js/7.f9768793.js"><link rel="prefetch" href="/MyBlog/assets/js/8.d2d80cc9.js"><link rel="prefetch" href="/MyBlog/assets/js/9.b7ce2920.js">
+    <link rel="stylesheet" href="/MyBlog/assets/css/0.styles.bee4a45e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/MyBlog/" class="home-link router-link-active"><!----> <span class="site-name">Tianyの笔记分享</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/MyBlog/js/" class="nav-link router-link-active">
+  Js
+</a></div><div class="nav-item"><a href="/MyBlog/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/MyBlog/react/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/MyBlog/hc/" class="nav-link">
+  Html &amp; Css
+</a></div><div class="nav-item"><a href="/MyBlog/webpack/" class="nav-link">
+  Webpack
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试" class="dropdown-title"><span class="title">面试</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试" class="mobile-dropdown-title"><span class="title">面试</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/MyBlog/面试题/html/" class="nav-link">
+  Html
+</a></li><li class="dropdown-item"><!----> <a href="/MyBlog/面试题/Css/" class="nav-link">
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/MyBlog/面试题/js/" class="nav-link">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/MyBlog/面试题/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/MyBlog/面试题/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/MyBlog/面试题/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/MyBlog/面试题/小程序/" class="nav-link">
+  小程序
+</a></li><li class="dropdown-item"><!----> <a href="/MyBlog/面试题/优化/" class="nav-link">
+  前端优化
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术分享" class="dropdown-title"><span class="title">技术分享</span> <span class="arrow down"></span></button> <button type="button" aria-label="技术分享" class="mobile-dropdown-title"><span class="title">技术分享</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          React
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/MyBlog/问题/React/父组件调用子组件方法.html" class="nav-link">
+  父组件调用子组件方法
+</a></li><li class="dropdown-subitem"><a href="/MyBlog/问题/React/forwardRef+connect.html" class="nav-link">
+  forwardRef+Redux+connect配合使用
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Vue
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/MyBlog/问题/Vue/" class="nav-link">
+  
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Repo" class="dropdown-title"><span class="title">Repo</span> <span class="arrow down"></span></button> <button type="button" aria-label="Repo" class="mobile-dropdown-title"><span class="title">Repo</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/Tiany-L" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/tiany-l" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/MyBlog/js/" class="nav-link router-link-active">
+  Js
+</a></div><div class="nav-item"><a href="/MyBlog/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/MyBlog/react/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/MyBlog/hc/" class="nav-link">
+  Html &amp; Css
+</a></div><div class="nav-item"><a href="/MyBlog/webpack/" class="nav-link">
+  Webpack
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试" class="dropdown-title"><span class="title">面试</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试" class="mobile-dropdown-title"><span class="title">面试</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/MyBlog/面试题/html/" class="nav-link">
+  Html
+</a></li><li class="dropdown-item"><!----> <a href="/MyBlog/面试题/Css/" class="nav-link">
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/MyBlog/面试题/js/" class="nav-link">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/MyBlog/面试题/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/MyBlog/面试题/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/MyBlog/面试题/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/MyBlog/面试题/小程序/" class="nav-link">
+  小程序
+</a></li><li class="dropdown-item"><!----> <a href="/MyBlog/面试题/优化/" class="nav-link">
+  前端优化
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术分享" class="dropdown-title"><span class="title">技术分享</span> <span class="arrow down"></span></button> <button type="button" aria-label="技术分享" class="mobile-dropdown-title"><span class="title">技术分享</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          React
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/MyBlog/问题/React/父组件调用子组件方法.html" class="nav-link">
+  父组件调用子组件方法
+</a></li><li class="dropdown-subitem"><a href="/MyBlog/问题/React/forwardRef+connect.html" class="nav-link">
+  forwardRef+Redux+connect配合使用
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Vue
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/MyBlog/问题/Vue/" class="nav-link">
+  
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Repo" class="dropdown-title"><span class="title">Repo</span> <span class="arrow down"></span></button> <button type="button" aria-label="Repo" class="mobile-dropdown-title"><span class="title">Repo</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/Tiany-L" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/tiany-l" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>简介</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Js基础</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/MyBlog/js/hello.html" class="sidebar-link">Hello World!</a></li><li><a href="/MyBlog/js/代码结构.html" class="sidebar-link">代码结构</a></li><li><a href="/MyBlog/js/变量.html" class="active sidebar-link">变量</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/MyBlog/js/变量.html#声明变量" class="sidebar-link">声明变量</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/MyBlog/js/变量.html#修改值" class="sidebar-link">修改值</a></li></ul></li><li class="sidebar-sub-header"><a href="/MyBlog/js/变量.html#变量命名" class="sidebar-link">变量命名</a></li><li class="sidebar-sub-header"><a href="/MyBlog/js/变量.html#常量" class="sidebar-link">常量</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/MyBlog/js/变量.html#大写形式的常数" class="sidebar-link">大写形式的常数</a></li></ul></li><li class="sidebar-sub-header"><a href="/MyBlog/js/变量.html#老旧的-var" class="sidebar-link">老旧的 &quot;var&quot;</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/MyBlog/js/变量.html#var没有块级作用域" class="sidebar-link">var没有块级作用域</a></li><li class="sidebar-sub-header"><a href="/MyBlog/js/变量.html#var允许重新声明" class="sidebar-link">var允许重新声明</a></li><li class="sidebar-sub-header"><a href="/MyBlog/js/变量.html#var声明的变量可以变量提升" class="sidebar-link">var声明的变量可以变量提升</a></li><li class="sidebar-sub-header"><a href="/MyBlog/js/变量.html#暂时性死区" class="sidebar-link">暂时性死区</a></li></ul></li></ul></li><li><a href="/MyBlog/js/数据类型.html" class="sidebar-link">数据类型</a></li><li><a href="/MyBlog/js/api.html" class="sidebar-link">api</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="变量"><a href="#变量" class="header-anchor">#</a> 变量</h1> <p><strong><code>变量</code> 是数据的“命名存储”。</strong></p> <h2 id="声明变量"><a href="#声明变量" class="header-anchor">#</a> 声明变量</h2> <p>要想使用变量，你需要做的第一步就是创建它 -- 更准确的说，是声明一个变量。声明一个变量的语法是在 <code>var</code> 或 <code>let</code> 关键字之后加上这个变量的名字：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> myName<span class="token punctuation">;</span>
+<span class="token keyword">let</span> myAge<span class="token punctuation">;</span>
+</code></pre></div><p>现在，我们可以通过赋值运算符 = 为变量添加一些数据：</p> <div class="language-js extra-class"><pre class="language-js"><code>myName <span class="token operator">=</span> <span class="token string">&quot;Tom&quot;</span><span class="token punctuation">;</span>
+myAge <span class="token operator">=</span> <span class="token number">18</span><span class="token punctuation">;</span>
+</code></pre></div><p>现在这个字符串已经保存到与该变量相关联的内存区域了，我们可以通过使用该变量名称访问它：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">alert</span><span class="token punctuation">(</span>myName<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 显示变量内容</span>
+<span class="token function">alert</span><span class="token punctuation">(</span>myAge<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 显示变量内容</span>
+</code></pre></div><p>简洁一点，我们可以将变量定义和赋值合并成一行：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> myName <span class="token operator">=</span> <span class="token string">&quot;Tom!&quot;</span><span class="token punctuation">;</span> <span class="token comment">// 定义变量，并且赋值</span>
+</code></pre></div><p>也可以在一行中声明多个变量：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> user <span class="token operator">=</span> <span class="token string">&quot;John&quot;</span><span class="token punctuation">,</span>age <span class="token operator">=</span> <span class="token number">25</span><span class="token punctuation">,</span>sex <span class="token operator">=</span> <span class="token string">&quot;meal&quot;</span><span class="token punctuation">;</span>
+</code></pre></div><p>看上去代码长度更短，但并不推荐这样。为了更好的可读性，最好行只声明一个变量。<br>
+多行变量声明有点长，但更容易阅读：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> user <span class="token operator">=</span> <span class="token string">&quot;John&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> age <span class="token operator">=</span> <span class="token number">25</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> sex <span class="token operator">=</span> <span class="token string">&quot;meal&quot;</span><span class="token punctuation">;</span>
+</code></pre></div><p>一些程序员采用下面的形式书写多个变量：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> user <span class="token operator">=</span> <span class="token string">'John'</span><span class="token punctuation">,</span>
+    age <span class="token operator">=</span> <span class="token number">25</span><span class="token punctuation">,</span>
+    sex <span class="token operator">=</span> <span class="token string">'meal'</span><span class="token punctuation">;</span>
+</code></pre></div><p>……甚至使用“逗号在前”的形式：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> user <span class="token operator">=</span> <span class="token string">'John'</span>
+  <span class="token punctuation">,</span> age <span class="token operator">=</span> <span class="token number">25</span>
+  <span class="token punctuation">,</span> sex <span class="token operator">=</span> <span class="token string">'meal'</span><span class="token punctuation">;</span>
+</code></pre></div><p>技术上讲，这些变体都有一样的效果。所以，这是个个人品味和审美方面的问题。</p> <div class="custom-block tip"><p class="custom-block-title">var</p> <p>在较老的脚本中，可能发现另一个关键字 <code>var</code>，而不是 <code>let</code>：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> message <span class="token operator">=</span> <span class="token string">'Hello'</span><span class="token punctuation">;</span>
+</code></pre></div><p><code>var</code> 关键字与 <code>let</code> 大体 相同，也用来声明变量，但稍微有些不同，也有点“老派”。<br> <code>let</code> 和 <code>var</code> 之间有些微妙的差别，会在下面说一说。</p></div> <h3 id="修改值"><a href="#修改值" class="header-anchor">#</a> 修改值</h3> <p>变量声明赋值可以随意修改</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> message<span class="token punctuation">;</span>
+message <span class="token operator">=</span> <span class="token string">'Hello!'</span><span class="token punctuation">;</span>
+message <span class="token operator">=</span> <span class="token string">'World!'</span><span class="token punctuation">;</span> <span class="token comment">// 值改变了</span>
+<span class="token function">alert</span><span class="token punctuation">(</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 显示World!</span>
+</code></pre></div><p>当值改变的时候，之前的数据就被从变量中删除了：</p> <p>我们还可以声明两个变量，然后将其中一个变量的数据拷贝到另一个变量。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> hello <span class="token operator">=</span> <span class="token string">'Hello world!'</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> message<span class="token punctuation">;</span>
+<span class="token comment">// 将字符串 'Hello world' 从变量 hello 拷贝到 message</span>
+message <span class="token operator">=</span> hello<span class="token punctuation">;</span>
+<span class="token comment">// 现在两个变量保存着相同的数据</span>
+<span class="token function">alert</span><span class="token punctuation">(</span>hello<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Hello world!</span>
+<span class="token function">alert</span><span class="token punctuation">(</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Hello world!</span>
+</code></pre></div><div class="custom-block danger"><p class="custom-block-title">声明两次会触发 error</p> <p>一个变量应该只被声明一次。<br>
+对同一个变量进行重复声明会触发 error：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> message <span class="token operator">=</span> <span class="token string">&quot;This&quot;</span><span class="token punctuation">;</span>
+<span class="token comment">// 重复 'let' 会导致 error</span>
+<span class="token keyword">let</span> message <span class="token operator">=</span> <span class="token string">&quot;That&quot;</span><span class="token punctuation">;</span> <span class="token comment">// SyntaxError: 'message' has already been declared</span>
+</code></pre></div><p>因此，我们对同一个变量应该只声明一次，之后在不使用 let 的情况下对其进行引用。</p></div> <h2 id="变量命名"><a href="#变量命名" class="header-anchor">#</a> 变量命名</h2> <p>JavaScript 的变量命名有两个限制：</p> <p>1、变量名称必须仅包含字母、数字、符号 <code>$</code> 和 <code>_</code>。<br>
+2、首字符必须非数字。</p> <p>有效的命名，例如：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> firstName<span class="token punctuation">;</span>
+<span class="token keyword">let</span> name123<span class="token punctuation">;</span>
+</code></pre></div><p>如果命名包括多个单词，通常采用驼峰式命名法（camelCase）。也就是，单词一个接一个，除了第一个单词，其他的每个单词都以大写字母开头：<code>myVeryLongName</code>。</p> <p>有趣的是，美元符号 <code>'$'</code> 和下划线 <code>'_'</code> 也可以用于变量命名。它们是正常的符号，就跟字母一样，没有任何特殊的含义。</p> <p>下面的命名是有效的：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> $ <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment">// 使用 &quot;$&quot; 声明一个变量</span>
+<span class="token keyword">let</span> _ <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span> <span class="token comment">// 现在用 &quot;_&quot; 声明一个变量</span>
+
+<span class="token function">alert</span><span class="token punctuation">(</span>$ <span class="token operator">+</span> _<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 3</span>
+</code></pre></div><p>下面的变量命名不正确：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> 1a<span class="token punctuation">;</span> <span class="token comment">// 不能以数字开始</span>
+<span class="token keyword">let</span> my<span class="token operator">-</span>name<span class="token punctuation">;</span> <span class="token comment">// 连字符 '-' 不允许用于变量命名</span>
+</code></pre></div><p>区分大小写：<br>
+命名为 <code>apple</code> 和 <code>APPLE</code> 的变量是不同的两个变量。</p> <div class="custom-block tip"><p class="custom-block-title">保留字</p> <p>有一张 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#keywords" target="_blank" rel="noopener noreferrer">保留字列表<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，这张表中的保留字无法用作变量命名，因为它们被用于编程语言本身了。</p> <p>比如，<code>let</code>、<code>class</code>、<code>return</code>、<code>function</code> 都被保留了。</p> <p>下面的代码将会抛出一个语法错误：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> <span class="token keyword">let</span> <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span> <span class="token comment">// 不能用 &quot;let&quot; 来命名一个变量，错误！</span>
+<span class="token keyword">let</span> <span class="token keyword">return</span> <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span> <span class="token comment">// 同样，不能使用 &quot;return&quot;，错误！</span>
+</code></pre></div></div> <div class="custom-block tip"><p class="custom-block-title">未采用 use strict 下的赋值</p> <p>一般，我们需要在使用一个变量前定义它。但是在早期，我们可以不使用 let 进行变量声明，而可以简单地通过赋值来创建一个变量。现在如果我们不在脚本中使用 use strict 声明启用严格模式，这仍然可以正常工作，这是为了保持对旧脚本的兼容。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 注意：这个例子中没有 &quot;use strict&quot;</span>
+
+num <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span> <span class="token comment">// 如果变量 &quot;num&quot; 不存在，就会被创建</span>
+
+<span class="token function">alert</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 5</span>
+</code></pre></div><p>上面这是个糟糕的做法，严格模式下会报错。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token string">&quot;use strict&quot;</span><span class="token punctuation">;</span>
+
+num <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span> <span class="token comment">// 错误：num 未定义</span>
+</code></pre></div></div> <h2 id="常量"><a href="#常量" class="header-anchor">#</a> 常量</h2> <p>声明一个常数（不变）变量，可以使用 <strong><code>const</code></strong> 而非 <code>let</code>：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> myTel <span class="token operator">=</span> <span class="token string">'123456789'</span><span class="token punctuation">;</span>
+</code></pre></div><p>使用 <strong><code>const</code></strong> 声明的变量称为“常量”。它们不能被修改，如果你尝试修改就会发现报错：</p> <div class="language-js extra-class"><pre class="language-js"><code>myTel <span class="token operator">=</span> <span class="token string">'987654321'</span><span class="token punctuation">;</span> <span class="token comment">// 错误，不能对常量重新赋值</span>
+</code></pre></div><p>当程序员能确定这个变量永远不会改变的时候，就可以使用 <strong><code>const</code></strong> 来确保这种行为，并且清楚地向别人传递这一事实。</p> <h3 id="大写形式的常数"><a href="#大写形式的常数" class="header-anchor">#</a> 大写形式的常数</h3> <p>一个普遍的做法是将常量用作别名，以便记住那些在执行之前就已知的难以记住的值。</p> <p>使用大写字母和下划线来命名这些常量。</p> <p>例如，十六进制格式为颜色声明常量：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> <span class="token constant">COLOR_ORANGE</span> <span class="token operator">=</span> <span class="token string">&quot;#FF7F00&quot;</span><span class="token punctuation">;</span>
+
+<span class="token comment">// ……当我们需要选择一个颜色</span>
+<span class="token keyword">let</span> color <span class="token operator">=</span> <span class="token constant">COLOR_ORANGE</span><span class="token punctuation">;</span>
+<span class="token function">alert</span><span class="token punctuation">(</span>color<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// #FF7F00</span>
+</code></pre></div><p>好处：</p> <p><code>COLOR_ORANGE</code> 比 <code>&quot;#FF7F00&quot;</code> 更容易记忆。
+比起 <code>COLOR_ORANGE</code> 而言，<code>&quot;#FF7F00&quot;</code> 更容易输错。
+阅读代码时，<code>COLOR_ORANGE</code> 比 #<code>FF7F00</code> 更易懂。
+什么时候该为常量使用大写命名，什么时候进行常规命名？让我们弄清楚一点。</p> <p>作为一个“常数”，意味着值永远不变。但是有些常量在执行之前就已知了，还有些在执行期间被“计算”出来，但初始赋值之后就不会改变。</p> <p>例如：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> pageLoadTime <span class="token operator">=</span> <span class="token comment">/* 网页加载所需的时间 */</span><span class="token punctuation">;</span>
+</code></pre></div><p><code>pageLoadTime</code> 的值在页面加载之前是未知的，所以采用常规命名。但是它仍然是个常量，因为赋值之后不会改变。</p> <p>换句话说，大写命名的常量仅用作“硬编码（hard-coded）”值的别名。</p> <h2 id="老旧的-var"><a href="#老旧的-var" class="header-anchor">#</a> 老旧的 &quot;var&quot;</h2> <p>之前我们提到了变量声明的三种方式：<br>
+1.<strong><code>let</code></strong><br>
+2.<strong><code>const</code></strong><br>
+3.<strong><code>var</code></strong></p> <p><code>var</code> 声明与 <code>let</code> 相似。大部分情况下，我们可以用 <code>let</code> 代替 <code>var</code> ，都能达到预期的效果：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> message <span class="token operator">=</span> <span class="token string">&quot;Hi&quot;</span><span class="token punctuation">;</span>
+<span class="token function">alert</span><span class="token punctuation">(</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Hi</span>
+</code></pre></div><p>了解 <code>var</code> 与  <code>let</code> 时的区别，以避免奇怪的错误，是很重要的。</p> <h3 id="var没有块级作用域"><a href="#var没有块级作用域" class="header-anchor">#</a> <code>var</code>没有块级作用域</h3> <p>用 <code>var</code> 声明的变量，不是函数作用域就是全局作用域。它们在代码块外也是可见的（译注：也就是说，<code>var</code> 声明的变量只有函数作用域和全局作用域，没有块级作用域）。</p> <p>举个例子：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> test <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span> <span class="token comment">// 使用 &quot;var&quot; 而不是 &quot;let&quot;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">alert</span><span class="token punctuation">(</span>test<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// true，变量在 if 结束后仍存在</span>
+</code></pre></div><p>由于 <code>var</code> 会忽略代码块，因此我们有了一个全局变量 <code>test</code>。</p> <p>如果我们在第二行使用 <code>let test</code> 而不是 <code>var test</code>，那么该变量将仅在 <code>if</code> 内部可见：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> test <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span> <span class="token comment">// 使用 &quot;let&quot;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">alert</span><span class="token punctuation">(</span>test<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// ReferenceError: test is not defined</span>
+</code></pre></div><p>对于循环也是这样的，<code>var</code> 声明的变量没有块级作用域也没有循环局部作用域：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> one <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">alert</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">// 10，&quot;i&quot; 在循环结束后仍可见，它是一个全局变量</span>
+<span class="token function">alert</span><span class="token punctuation">(</span>one<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 1，&quot;one&quot; 在循环结束后仍可见，它是一个全局变量</span>
+</code></pre></div><p>如果一个代码块位于函数内部，那么 <code>var</code> 声明的变量的作用域将为函数作用域：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">sayHi</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> phrase <span class="token operator">=</span> <span class="token string">&quot;Hello&quot;</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">alert</span><span class="token punctuation">(</span>phrase<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 能正常工作</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">sayHi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">alert</span><span class="token punctuation">(</span>phrase<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// ReferenceError: phrase is not defined</span>
+</code></pre></div><p>可以看到，<code>var</code> 穿透了 <code>if</code>，<code>for</code> 和其它代码块。这是因为在早期的 JavaScript 中，块没有词法环境，而 <code>var</code> 就是这个时期的代表之一。</p> <h3 id="var允许重新声明"><a href="#var允许重新声明" class="header-anchor">#</a> <code>var</code>允许重新声明</h3> <p>如果我们用 <code>let</code> 在同一作用域下将同一个变量声明两次，则会出现错误：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> user<span class="token punctuation">;</span>
+<span class="token keyword">let</span> user<span class="token punctuation">;</span> <span class="token comment">// SyntaxError: 'user' has already been declared</span>
+</code></pre></div><p>使用 <code>var</code>，我们可以重复声明一个变量，不管多少次都行。如果我们对一个已经声明的变量使用 <code>var</code>，这条新的声明语句会被忽略：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> user <span class="token operator">=</span> <span class="token string">&quot;Pete&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> user <span class="token operator">=</span> <span class="token string">&quot;John&quot;</span><span class="token punctuation">;</span> <span class="token comment">// 这个 &quot;var&quot; 无效（因为变量已经声明过了）</span>
+<span class="token comment">// ……不会触发错误</span>
+
+<span class="token function">alert</span><span class="token punctuation">(</span>user<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// John</span>
+</code></pre></div><h3 id="var声明的变量可以变量提升"><a href="#var声明的变量可以变量提升" class="header-anchor">#</a> <code>var</code>声明的变量可以变量提升</h3> <p>当函数开始的时候，就会处理 <code>var</code> 声明<br>
+换言之，<code>var</code> 声明的变量会在函数开头被定义，与它在代码中定义的位置无关（这里不考虑定义在嵌套函数中的情况）。</p> <p>那么看一下这段代码：</p> <div class="language-js extra-class"><div class="highlight-lines"><br><br><br><br><br><div class="highlighted"> </div><br><br><br></div><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">sayHi</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  phrase <span class="token operator">=</span> <span class="token string">&quot;Hello&quot;</span><span class="token punctuation">;</span>
+
+  <span class="token function">alert</span><span class="token punctuation">(</span>phrase<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">var</span> phrase<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token function">sayHi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>……从技术上讲，它与下面这种情况是一样的（<code>var phrase</code> 被上移至函数开头）：</p> <div class="language-js extra-class"><div class="highlight-lines"><br><div class="highlighted"> </div><br><br><br><br><br><br><br></div><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">sayHi</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> phrase<span class="token punctuation">;</span>
+
+  phrase <span class="token operator">=</span> <span class="token string">&quot;Hello&quot;</span><span class="token punctuation">;</span>
+
+  <span class="token function">alert</span><span class="token punctuation">(</span>phrase<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token function">sayHi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>……甚至与这种情况也一样（记住，代码块是会被忽略的）：</p> <div class="language-js extra-class"><div class="highlight-lines"><br><br><br><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><br><br><br><br><br></div><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">sayHi</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  phrase <span class="token operator">=</span> <span class="token string">&quot;Hello&quot;</span><span class="token punctuation">;</span> <span class="token comment">// (*)</span>
+
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> phrase<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">alert</span><span class="token punctuation">(</span>phrase<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token function">sayHi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>人们将这种行为称为 <strong>“提升”</strong>（英文为 “hoisting” 或 “raising”），因为所有的 <code>var</code> 都被“提升”到了函数的顶部。</p> <p>所以，在上面的例子中，<code>if (false)</code> 分支永远都不会执行，但没关系，它里面的 <code>var</code> 在函数刚开始时就被处理了，所以在执行<code>(*)</code> 那行代码时，变量是存在的。</p> <p><strong>声明会被提升，但是赋值不会</strong>。</p> <p>我们最好用例子来说明：</p> <div class="language-js extra-class"><div class="highlight-lines"><br><br><br><div class="highlighted"> </div><br><br><br><br></div><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">sayHi</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">alert</span><span class="token punctuation">(</span>phrase<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">var</span> phrase <span class="token operator">=</span> <span class="token string">&quot;Hello&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">sayHi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><code>var phrase = &quot;Hello&quot;</code>这行代码包含两个行为：</p> <p>使用 <code>var</code> 声明变量<br>
+使用 <code>=</code>给变量赋值。<br>
+声明在函数刚开始执行的时候（“提升”）就被处理了，但是赋值操作始终是在它出现的地方才起作用。所以这段代码实际上是这样工作的：</p> <div class="language-js extra-class"><div class="highlight-lines"><br><div class="highlighted"> </div><br><br><br><div class="highlighted"> </div><br><br><br><br></div><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">sayHi</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> phrase<span class="token punctuation">;</span> <span class="token comment">// 在函数刚开始时进行变量声明</span>
+
+  <span class="token function">alert</span><span class="token punctuation">(</span>phrase<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// undefined</span>
+
+  phrase <span class="token operator">=</span> <span class="token string">&quot;Hello&quot;</span><span class="token punctuation">;</span> <span class="token comment">// ……赋值 — 当程序执行到这一行时。</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">sayHi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>因为所有的 <code>var</code> 声明都是在函数开头处理的，我们可以在任何地方引用它们。但是在它们被赋值之前都是 <code>undefined</code>。</p> <p>上面两个例子中，<code>alert</code> 运行都不会报错，因为变量 <code>phrase</code> 是存在的。但是它还没有被赋值，所以显示 <code>undefiend</code>。</p> <h3 id="暂时性死区"><a href="#暂时性死区" class="header-anchor">#</a> 暂时性死区</h3> <p>从一个代码块的开始直到代码执行到声明变量的行之前，<code>let</code> 或 <code>const</code> 声明的变量都处于“暂时性死区”（Temporal dead zone，TDZ）中。</p> <p>当变量处于暂时性死区之中时，其尚未被初始化，尝试访问变量将抛出 <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError" target="_blank" rel="noopener noreferrer">ReferenceError<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。当代码执行到声明变量所在的行时，变量被初始化为一个值。如果声明中未指定初始值，则变量将被初始化为 <code>undefined</code>。</p> <p>与 <code>var</code> 声明的变量不同，如果在声明前访问了变量，变量将会返回 <code>undefined</code>。以下代码演示了在使用 <code>let</code> 和 <code>var</code> 声明变量的行之前访问变量的不同结果。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span> <span class="token comment">// TDZ starts at beginning of scope</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>bar<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// undefined</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>foo<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// ReferenceError</span>
+  <span class="token keyword">var</span> bar <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+  <span class="token keyword">let</span> foo <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span> <span class="token comment">// End of TDZ (for foo)</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><p>使用术语“temporal”是因为区域取决于执行顺序（时间），而不是编写代码的顺序（位置）。例如，下面的代码会生效，是因为即使使用 <code>let</code> 变量的函数出现在变量声明之前，但函数的执行是在暂时性死区的外面。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  <span class="token comment">// TDZ starts at beginning of scope</span>
+  <span class="token keyword">const</span> <span class="token function-variable function">func</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>letVar<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// OK</span>
+
+  <span class="token comment">// Within the TDZ letVar access throws `ReferenceError`</span>
+
+  <span class="token keyword">let</span> letVar <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span> <span class="token comment">// End of TDZ (for letVar)</span>
+  <span class="token function">func</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Called outside TDZ!</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新:</span> <span class="time">11/8/2022, 3:28:50 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/MyBlog/js/代码结构.html" class="prev">
+        代码结构
+      </a></span> <span class="next"><a href="/MyBlog/js/数据类型.html">
+        数据类型
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/MyBlog/assets/js/app.134e4bf8.js" defer></script><script src="/MyBlog/assets/js/2.db46a12f.js" defer></script><script src="/MyBlog/assets/js/14.160b5417.js" defer></script>
+  </body>
+</html>
